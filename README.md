@@ -21,12 +21,12 @@ Please file new issues, feature requests and suggestions, but **DO search for si
 
 If you would like to ask a question that you feel doesn't warrant an issue (yet), please reach out to us via Twitter:
 
-* Naveed Ahmad Hematmal, Program Manager: [@NaveedHematmal](https://twitter.com/NaveedHematmal)
-* Muhammad Yasin Zahin, Developer: []()
-* Muhammad Yasir Stanekzai, Developer: []()
-* Abdul Basir Zafar, Developer: []()
-* Elham Karbasi: []()
-* Saeeda Rasuly: []()
-* Madina Eshaq: []()
+* NaveedAhmadHematmal: Program Manager: [@NaveedHematmal](https://twitter.com/NaveedHematmal)
+* MohammadYasirStanekzai: Product Owner: []()
+* AbdulBasirZafar: Developer: []()
+* YasinZahin: Developer: []()
+* Elham-Karbasi: Developer []()
+* SaeedaRasuly: Developer []()
+* Madina-Eshaq: Developer []()
 
 ## Developer Guidance
