@@ -23,15 +23,6 @@ function changePhoto() {
     }, 5000);
 }
 
-function nextPhoto(n){
-    i = n + i;
-    changePhoto();
-}
-
-function dotSelector(){
-    // change circle with i
-    // your code here.
-}
 
 window.onload = changePhoto;
 
