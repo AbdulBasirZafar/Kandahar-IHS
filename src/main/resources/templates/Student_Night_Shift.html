@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta ID="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Night Shift Group</title>
     <link rel="stylesheet" href="../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -32,7 +32,7 @@
     <div id="content">
 
         <section>
-            <h1>Add Group ></h1>
+            <h1>Add Night Shift Group ></h1>
         </section>
 
         <form action="#" method="post">
@@ -42,79 +42,44 @@
                 <div>
                     <h2>Select Teacher</h2>
                     <br>
-                    <label for="teacher">Teacher_Name</label>
-                    <select name="teacher" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <label for="teacher">Teacher_ID</label>
+                    <input type="number" name="teacher-id" id="">
                     <hr>
                     <br>
                     <h2>Select Students</h2>
                     <br>
-                    <label for="student_1_name">Student_1_Name</label>
-                    <select name="student_1_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_2_name">Student_2_Name</label>
-                    <select name="student_2_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_3_name">Student_3_Name</label>
-                    <select name="student_3_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_4_name">Student_4_Name</label>
-                    <select name="student_4_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_5_name">Student_5_Name</label>
-                    <select name="student_5_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_6_name">Student_6_Name</label>
-                    <select name="student_6_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="student_7_name">Student_7_Name</label>
-                    <select name="student_7_name" id="">
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <label for="student_1_ID">Student_1_ID</label>
+                    <input type="number" name="student_1_ID" id="">
+                    <label for="student_2_ID">Student_2_ID</label>
+                    <input type="number" name="student_2_ID" id="">
+                    <label for="student_3_ID">Student_3_ID</label>
+                    <input type="number" name="student_3_ID" id="">
+                    <label for="student_4_ID">Student_4_ID</label>
+                    <input type="number" name="student_4_ID" id="">
+                    <label for="student_5_ID">Student_5_ID</label>
+                    <input type="number" name="student_5_ID" id="">
+                    <label for="student_6_ID">Student_6_ID</label>
+                    <input type="number" name="student_6_ID" id="">
+                    <label for="student_7_ID">Student_7_ID</label>
+                    <input type="number" name="student_7_ID" id="">
+                    
                     <hr>
                     <br>
                     <h2>Select Course and Date</h2>
                     <br>
-                    <label for="course">Course_Name</label>
-                    <select name="course" id="">
+                    <label for="course">Faculty</label>
+                    <select ID="course" id="">
                         <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
+                        <option value="Midwifery">Midwifery</option>
+                        <option value="Nursing">Nursing</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Laboratory">Laboratory</option>
                     </select>
+                    <label for="course">Course_ID</label>
+                    <input type="number" name="course" id="">
+        
                     <label for="date">Date</label>
-                    <input type="date" name="date" id="" required>
+                    <input type="date" ID="date" id="" required>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 

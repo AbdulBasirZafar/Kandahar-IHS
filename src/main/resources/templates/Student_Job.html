@@ -12,16 +12,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#" style="border: none;">health institute</a></li>
-            <li><a href="#">Teacher</a></li>
-            <li><a href="#"
-                    style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE;">Student</a></li>
-            <li><a href="#">Employee</a></li>
-            <li><a href="#">Hostel</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Attendance</a></li>
-            <li><a href="#">Staff</a></li>
+            <li><a href="Dashboard.html" style="border: none;">health institute</a></li>
+            <li><a href="Student.html">Student Admission</a></li>
+            <li><a href="Score.html">Student Score</a></li>
+            <li><a href="Student_Attendance.html">Student Attendance</a></li>
+            <li><a href="Student_Job.html" style="background: white; border-radius: 20px; color: #1464BE;">Student
+                    Job</a></li>
             <li>
                 <!-- <i class="fas fa -user" style="font-size: 30px;"></i> -->
                 <img src="#" alt="">
@@ -32,10 +28,10 @@
     <div id="content">
 
         <section>
-            <h1>Add Student' job ></h1>
+            <h1>Add Student job ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="Student_Job" action="#" method="post">
 
             <main id="main">
 
@@ -43,17 +39,32 @@
                     <label for="Student_Name">Student_Name</label>
                     <select name="Student_Name" id="">
                         <option value="Select">Select</option>
-                        
+
                     </select>
-                    <label for="HireDate">HireDate</label>
-                    <input type="date" name="HireDate" id="" required>
-                    <label for="Office">Office</label>
-                    <input type="text" name="Office" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Position">Position</label>
-                    <input type="text" name="Position" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Province">Province</label>
-                    <input type="text" name="Province" id="" pattern="[A-Za-z- ]+" required>
-                   
+                    <label for="hire_date">Hire_Date</label>
+                    <input type="date" name="hire_date" id="" required>
+                    <label for="office_name">Office_Name</label>
+                    <input type="text" name="office_name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="office_email">Office_Email</label>
+                    <input type="email" name="office_email" id="" required>
+                    <label for="office_phone">Office_Phone_Number</label>
+                    <input type="number" name="office_phone" id="" required>
+                    <label for="position">Position</label>
+                    <input type="text" name="position" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="province">Province</label>
+                    <select name="province" id="" required>
+                        <option value="">Select</option>
+                        <option value="kandahar">Kandahar</option>
+                        <option value="kabul">Kabul</option>
+                        <option value="herat">Herat</option>
+                        <option value="balkh">Balkh</option>
+                        <option value="nimruz">Nimruz</option>
+                        <option value="helmand">Helmand</option>
+                        <option value="nangarhar">Nangarhar</option>
+                        <option value="farah">Farah</option>
+                        <option value="other">Other</option>
+                    </select>
+
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 
                         <button type="submit" class="button-style">Save</button>
@@ -61,7 +72,7 @@
 
                     </div>
                 </div>
-              
+
             </main>
 
         </form>
@@ -101,6 +112,7 @@
 
     </div>
 
+    <script src="../static/js/Student_Job_Form_Validation.js"></script>
 </body>
 
 </html>

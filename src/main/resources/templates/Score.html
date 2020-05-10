@@ -12,16 +12,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#" style="border: none;">health institute</a></li>
-            <li><a href="#">Teacher</a></li>
-            <li><a href="#"
-                    style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE;">Student</a></li>
-            <li><a href="#">Employee</a></li>
-            <li><a href="#">Hostel</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Attendance</a></li>
-            <li><a href="#">Staff</a></li>
+            <li><a href="Dashboard.html" style="border: none;">health institute</a></li>
+            <li><a href="Student.html">Student Admission</a></li>
+            <li><a href="Score.html" style="background: white; border-radius: 20px; color: #1464BE;">Student Score</a>
+            </li>
+            <li><a href="Student_Attendance.html">Student Attendance</a></li>
+            <li><a href="Student_Job.html">Student Job</a></li>
             <li>
                 <!-- <i class="fas fa -user" style="font-size: 30px;"></i> -->
                 <img src="#" alt="">
@@ -32,34 +28,59 @@
     <div id="content">
 
         <section>
-            <h1>Add Marks ></h1>
+            <h1>Add Student Marks ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="Student_Score" action="#" method="post">
 
             <main id="main">
 
                 <div>
-                    <label for="Student_ID">Student_ID</label>
-                    <input type="text" name="Student_ID" id="" pattern="[0-9]+" required>
-                    <label for="Marks">Marks</label>
-                    <input type="text" name="Marks" id="" pattern="[0-9]+" required>
-                    <label for="Type">Type</label>
-                    <select name="Type" id="">
-                        <option value="Select">Select</option>
-                        <option value="20%">20%</option>
-                        <option value="80%">80%</option>
+                    <label for="student_ID">Student_ID</label>
+                    <input type="number" name="student_ID" id="" pattern="[0-9]+" required>
+                    <label for="marks">Marks</label>
+                    <input type="number" min="0" max="100" name="marks" id="" required>
+                    <label for="type">Type</label>
+                    <select name="type" id="">
+                        <option value="">Select</option>
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                        <option value="40">40%</option>
+                        <option value="50">50%</option>
+                        <option value="60">60%</option>
+                        <option value="70">70%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
                     </select>
-                    <label for="Chance">Chance</label>
-                    <select name="Chance" id="" required>
-                        <option value="Select">Select</option>
-                        <option value="First Chance">First Chance</option>
-                        <option value="Second Chance">Second Chance</option>
-                        <option value="Third Chance">Third Chance</option>
+                    <label for="chance">Chance</label>
+                    <select name="chance" id="" required>
+                        <option value="">Select</option>
+                        <option value="first">First Chance</option>
+                        <option value="second">Second Chance</option>
+                        <option value="third">Third Chance</option>
                     </select>
-                    <label for="Course_Name">Course_Name</label>
-                    <input type="text" name="Course_Name" id="" required>
+                    <label for="course_name">Course_Name</label>
+                    <select name="course_name" id="">
+                        <option value="">Select</option>
+                    </select>
+                    <label for="year">Educational_Year</label>
+                    <select name="year" id="" required>
+                        <option value="">Select</option>
+                        <option value="first">First Year</option>
+                        <option value="second">Second Year</option>
+                        <option value="third">Third Year</option>
+                    </select>
+                    <label for="semester">Semester</label>
+                    <select name="semester" id="" required>
+                        <option value="">Select</option>
+                        <option value="first">First Semester</option>
+                        <option value="second">Second Semester</option>
+                    </select>
                     
+                    <label for="exam_date">Exam_Date</label>
+                    <input type="date" name="exam_date" id="" required>
+
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 
                         <button type="submit" class="button-style">Save</button>
@@ -105,9 +126,8 @@
         </aside>
 
     </div>
-    <script src="../static/js/script.js">
-
-    </script>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/Student_Score_Form_Validation.js"></script>
 </body>
 
 </html>

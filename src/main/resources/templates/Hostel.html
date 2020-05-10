@@ -36,15 +36,19 @@
             <h1>Add Hostel ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="validation()">
 
             <main id="main">
 
                 <div>
-                    <label for=" HostelID"> Hostel_ID</label>
-                    <input type="text" name=" HostelID" id="" pattern="[0-9]+" required>
+                    <label for=" HostelID"> Hostel_Number</label>
+                    <input type="number" name=" HostelID" id="" required>
                     <label for="HostelType ">Hostel_Type </label>
-                    <input type="text" name="HostelType" id="" pattern="[A-Za-z- ]+" required>
+                    <select name="hostelType" id="hi">
+                        <option value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 

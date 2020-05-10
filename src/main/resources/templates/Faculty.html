@@ -4,19 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Background</title>
+    <title>Student_Departments</title>
     <link rel="stylesheet" href="../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
-    
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="#" style="border: none;">health institute</a></li>
-            <li><a href="#"
-            style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE; font-size: 10px;">Teacher</a></li>
-            <li><a href="#">Student</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#" style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE;">Student</a></li>
             <li><a href="#">Employee</a></li>
             <li><a href="#">Hostel</a></li>
             <li><a href="#">Course</a></li>
@@ -33,7 +31,7 @@
     <div id="content">
 
         <section>
-            <h1>Add Educational Background ></h1>
+            <h1>Add Faculty ></h1>
         </section>
 
         <form action="#" method="post">
@@ -41,31 +39,16 @@
             <main id="main">
 
                 <div>
-                    <label for="Teacher_ID"> Teacher ID</label>
-                    <input type="text" name="Teacher_ID" id="" pattern="[A-Za-z- ]+" required>
-                    <label for=" Degree"> Degree</label>
-                    <input type="text" name=" Degree" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="CampusName"> CampusName </label>
-                    <input type="text" name="CampusName" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="CampusLocation">CampusLocation</label>
-                    <input type="text" name="CampusLocation" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="GraduationDate"> GraduationDate</label>
-                    <input type="date" name="GraduationDate" id="" required>
-                  
+
+                    <label for="Faculty Name">Faculty_Name</label>
+                    <input type="text" name="faculty" id="" pattern="[A-Za-z- ]+">
+
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 
                         <button type="submit" class="button-style">Save</button>
                         <button type="reset" class="button-style" id="btn-clear">Cancel</button>
 
                     </div>
-                </div>
-                <div>
-                    <label for=" photo">Certificate Attachment</label>
-                    <!-- <div>
-                        <img src="" id="photo" alt="" class="photo" style=" margin-left: 0px; ">
-                    </div> -->
-                    <input type="file" onchange="loadFile(event)" name="photo" id="select-photo-button"
-                        value="Select Photo" style="outline: none;">
                 </div>
 
             </main>

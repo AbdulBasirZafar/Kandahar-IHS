@@ -16,7 +16,7 @@
             <li><a href="#">Teacher</a></li>
             <li><a href="#">Student</a></li>
             <li><a href="#"
-                style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE;">Employee</a></li>
+                    style="background: white; border-radius: 20px; padding: 5px 10px; color: #1464BE;">Employee</a></li>
             <li><a href="#">Hostel</a></li>
             <li><a href="#">Course</a></li>
             <li><a href="#">Reports</a></li>
@@ -32,7 +32,8 @@
     <div id="content">
 
         <section>
-            <h1>Add Employee ></h1>
+            <h1 style="margin-bottom: 713px;">Add Employee info ></h1>
+            <h1>Add Employee Address ></h1>
         </section>
 
         <form action="#" method="post">
@@ -81,7 +82,26 @@
                     <input type="text" name="HireDate" id="" required>
                     <label for="Email">Email</label>
                     <input type="email" name="Email" id="" required>
-
+                    <hr>
+                    <label for=" Province"> Province</label>
+                    <select name="Province" id="" required>
+                        <option value="Select">Select</option>
+                        <option value="Kandahar">Kandahar</option>
+                        <option value="Kabul">Kabul</option>
+                        <option value="Herat">Herat</option>
+                        <option value="Mazar">Mazar</option>
+                        <option value="Nimruz">Nimruz</option>
+                        <option value="Helmand">Helmand</option>
+                        <option value="Farah">Farah</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="District"> District </label>
+                    <input type="number" name="District" id="" pattern="[0-9]+" required>
+                    <label for="StreetNo">StreetNo</label>
+                    <input type="number" name="StreetNo" id="" pattern="[0-9]+" required>
+                    <label for="HouseNo">HouseNo</label>
+                    <input type="number" name="HouseNo" id="" pattern="[0-9]+" required>
+                    
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 
                         <button type="submit" class="button-style">Save</button>
@@ -137,7 +157,7 @@
 
     </div>
     <script src="../static/js/script.js">
-        
+
     </script>
 </body>
 
