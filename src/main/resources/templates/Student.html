@@ -55,7 +55,7 @@
                     <label for="dob">DOB</label>
                     <input type="date" name="dob" id="" required>
                     <label for="pob">POB</label>
-                    <select name="province" id="" required>
+                    <select name="pob" id="" required>
                         <option value="">Select</option>
                         <option value="kandahar">Kandahar</option>
                         <option value="kabul">Kabul</option>
@@ -88,19 +88,30 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="" required>
                     <label for="cell_Phone"> Cell_Phone</label>
-                    <input type="text" name="cell_Phone" id="" pattern="[0-9]+" required>
+                    <input type="number" name="cell_phone" id="" required>
                     <label for="parent_cell_phone">Parent_Cell_Phone</label>
-                    <input type="text" name="parent_cell_phone" id="" pattern="[0-9]+" required>
+                    <input type="number" name="parent_cell_phone" id="" required>
                     <hr>
-                    
+
                     <label for="school_name">School_Name</label>
                     <input type="text" name="school_name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="school_location">School_Location</label>
-                    <input type="text" name="school_location" id="" pattern="[A-Za-z- ]+" required>
+                    <select name="school_location" id="" required>
+                        <option value="">Select</option>
+                        <option value="kandahar">Kandahar</option>
+                        <option value="kabul">Kabul</option>
+                        <option value="herat">Herat</option>
+                        <option value="balkh">Balkh</option>
+                        <option value="nimruz">Nimruz</option>
+                        <option value="helmand">Helmand</option>
+                        <option value="nangarhar">Nangarhar</option>
+                        <option value="farah">Farah</option>
+                        <option value="other">Other</option>
+                    </select>
                     <label for="graduation_date">Graduation_Date</label>
                     <input type="date" name="graduation_date" id="" required>
                     <label for="transcript">Transcript</label>
-                    <input type="file" id="" name="transcript">
+                    <input type="file" id="" name="transcript" required>
                     <hr>
                     <label for="faculty_name">Faculty Name</label>
                     <select name="faculty_name" id="">
@@ -145,7 +156,7 @@
                         <img src="" id="photo" alt="" class="photo" style=" margin-left: 0px; ">
                     </div>
                     <input type="file" onchange="loadFile(event)" name="photo" id="select-photo-button"
-                        value="Select Photo" style="outline: none;">
+                        value="Select Photo" style="outline: none;" required>
                 </div>
 
             </main>

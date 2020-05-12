@@ -28,18 +28,17 @@
     <div id="content">
 
         <section>
-            <h1>Add Student Marks ></h1>
+            <h1 >Add Student Marks ></h1>
         </section>
 
-        <form name="Student_Score" action="#" method="post">
-
+        <form name="Student_Score" action="#" method="post" onSubmit="return formValidation();">
             <main id="main">
 
                 <div>
                     <label for="student_ID">Student_ID</label>
                     <input type="number" name="student_ID" id="" pattern="[0-9]+" required>
                     <label for="marks">Marks</label>
-                    <input type="number" min="0" max="100" name="marks" id="" required>
+                    <input type="number"  name="marks" min="0" max="100" id="" required>
                     <label for="type">Type</label>
                     <select name="type" id="">
                         <option value="">Select</option>
@@ -61,8 +60,9 @@
                         <option value="third">Third Chance</option>
                     </select>
                     <label for="course_name">Course_Name</label>
-                    <select name="course_name" id="">
+                    <select name="course_name" id="" required>
                         <option value="">Select</option>
+                        <option value="math">Math</option>
                     </select>
                     <label for="year">Educational_Year</label>
                     <select name="year" id="" required>
@@ -76,8 +76,7 @@
                         <option value="">Select</option>
                         <option value="first">First Semester</option>
                         <option value="second">Second Semester</option>
-                    </select>
-                    
+                    </select>     
                     <label for="exam_date">Exam_Date</label>
                     <input type="date" name="exam_date" id="" required>
 

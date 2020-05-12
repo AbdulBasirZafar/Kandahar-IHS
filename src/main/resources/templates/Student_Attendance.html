@@ -7,16 +7,16 @@
     <title>Student_Attendance</title>
     <link rel="stylesheet" href="../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
-   
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="Dashboard.html" style="border: none;">health institute</a></li>
-            <li><a href="Student.html" >Student Admission</a></li>
+            <li><a href="Student.html">Student Admission</a></li>
             <li><a href="Score.html">Student Score</a></li>
-            <li><a href="Student_Attendance.html" style="background: white; border-radius: 20px;color: #1464BE;">Student Attendance</a></li>
+            <li><a href="Student_Attendance.html" style="background: white; border-radius: 20px;color: #1464BE;">Student
+                    Attendance</a></li>
             <li><a href="Student_Job.html">Student Job</a></li>
             <li>
                 <!-- <i class="fas fa -user" style="font-size: 30px;"></i> -->
@@ -28,10 +28,11 @@
     <div id="content">
 
         <section>
-            <h1>Add Attendance ></h1>
+            <h1 onclick="return formValidation();">Add Attendance ></h1>
         </section>
 
-        <form name="Student_Attandance" action="#" method="post">
+        <form name="Student_Attandance" action="#" method="post" onsubmit="return formValidation();">
+
 
             <main id="main">
 
@@ -39,20 +40,21 @@
                     <label for="student_ID"> Student_ID</label>
                     <input type="number" name="student_ID" id="" pattern="[0-9]+" required>
                     <label for="course_name">Course_Name </label>
-                    <select name="course_name" id="">
+                    <select name="course_name" id="" required>
                         <option value="">Select</option>
+                        <option value="math">Math</option>
+
                     </select>
                     <label for="attendance_date">Date</label>
                     <input type="date" name="attandance_date" id="" required>
                     <label for="present_days">Present_Days</label>
-                    <input type="number" name="present_days" id=""pattern="[0-9]+" required>
+                    <input type="number" name="present_days" min="1" max="31" id="" pattern="[0-9]+" required>
                     <label for="absent_days">Absent_Days</label>
-                    <input type="number" name="absent_days" id="" pattern="[0-9]+" required>
+                    <input type="number" name="absent_days" id="" min="1" max="31" pattern="[0-9]+" required>
                     <label for="off_days"> Off_Days</label>
-                    <input type="number" name="off_days" id="" pattern="[0-9]+" required>
+                    <input type="number" name="off_days" id="" min="1" max="31" pattern="[0-9]+" required>
                     <label for="leave_days">Leave</label>
-                    <input type="number" name="leave_days" id="" pattern="[0-9]+" required>
-                    
+                    <input type="number" name="leave_days" id="" min="1" max="31" pattern="[0-9]+" required>
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
 
                         <button type="submit" class="button-style">Save</button>
@@ -60,7 +62,6 @@
 
                     </div>
                 </div>
-        
             </main>
 
         </form>
@@ -100,7 +101,7 @@
 
     </div>
     <script src="../static/js/script.js"></script>
-    <script src="../static/js/Student_Attandance_Form_Validation.js"></script>
+    <script src="../static/js/Student_Attendance_Form_Validation.js"></script>
 </body>
 
 </html>

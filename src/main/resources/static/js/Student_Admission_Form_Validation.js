@@ -9,10 +9,11 @@ function formValidation() {
     var nationality = document.Student_Admission.nationality;
     var NID = document.Student_Admission.NID;
     var email = document.Student_Admission.email;
-    var cellPone = document.Student_Admission.cell_phone;
+    var cellPhone = document.Student_Admission.cell_phone;
     var parentCellPhone = document.Student_Admission.parent_cell_phone;
     var schoolName = document.Student_Admission.school_name;
     var graduationDate = document.Student_Admission.graduation_date;
+    var schoolLocation = document.Student_Admission.school_location;
     var transcript = document.Student_Admission.transcript;
     var facultyName = document.Student_Admission.faculty_name;
     var province = document.Student_Admission.province;
@@ -27,7 +28,33 @@ function formValidation() {
                     if (checkSelectList(POB, 'Insert valid Place Of Birth!')) {
                         if (checkSelectList(nativeLanguage, 'Select Valid Native Language!')) {
                             if (checkSelectList(nationality, 'Select Valid Nationality!')) {
-
+                                if (allNumber(NID, "Invalid NID!")) {
+                                    if (ValidateEmail(email, 'You have entered an invalid email address!')) {
+                                        if (allNumber(cellPhone, 'Invalid Student Phone Number!')) {
+                                            if (allNumber(parentCellPhone, 'Invalid Student Parent Phone Number!')) {
+                                                if (allLetter(schoolName, 'Invalid School Name!')) {
+                                                    if (checkSelectList(schoolLocation, 'Invalid School name!')) {
+                                                        if (checkFileExtension(transcript, 'Invalid File Format For Transcript!')) {
+                                                            if (allLetter(facultyName, 'Invalid School Name!')) {
+                                                                if (checkSelectList(province, "Invalid Province!")) {
+                                                                    if (allNumber(district, 'Invalid District Number!')) {
+                                                                        if (allNumber(streetNumber, 'Invalid Street Number!')) {
+                                                                            if (allNumber(houseNumber, 'Invalid House Number!')) {
+                                                                                if (checkFileExtension(photo, 'Invalid photo Format!')) {
+                                                                                    window.location.reload();
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -38,7 +65,6 @@ function formValidation() {
     }
     return false;
 }
-
 
 // check inputs for allLetter
 function allLetter(string, message) {
@@ -62,4 +88,42 @@ function checkSelectList(input, message) {
     else {
         return true;
     }
+}
+// checks inputs for only numbers
+function allNumber(number, message) {
+    var num = /^[0-9]+$/;
+    if (number.value.match(num)) {
+        return true;
+    }
+    else {
+        alert(message);
+        number.focus();
+        return false;
+    }
+}
+// Email checker
+function ValidateEmail(email, message) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.value.match(mailformat)) {
+        return true;
+    }
+    else {
+        alert(message);
+        email.focus();
+        return false;
+    }
+}
+// Extension checker
+function checkFileExtension(path, message) {
+    var fileExtension = path.value.split('.');
+    var extension = fileExtension[fileExtension.length - 1];
+    if (extension.toUpperCase() == "JPEG" || extension.toUpperCase() == "JPG" || extension.toUpperCase() == "PDF" || extension.toUpperCase() == "PNG" || extension.toUpperCase() == "RAW") {
+        return true;
+    }
+    else {
+        alert(message);
+        path.focus()
+        return false;
+    }
+
 }
