@@ -13,11 +13,14 @@
     <nav>
         <ul>
             <li><a href="Dashboard.html" style="border: none;">health institute</a></li>
-            <li><a href="Student.html">Student Admission</a></li>
-            <li><a href="Score.html" style="background: white; border-radius: 20px; color: #1464BE;">Student Score</a>
-            </li>
-            <li><a href="Student_Attendance.html">Student Attendance</a></li>
-            <li><a href="Student_Job.html">Student Job</a></li>
+            <div>
+                <li><a href="Student.html">Student Admission</a></li>
+                <li><a href="Score.html" style="background: white; border-radius: 20px; color: #1464BE;">Student
+                        Score</a>
+                </li>
+                <li><a href="Student_Attendance.html">Student Attendance</a></li>
+                <li><a href="Student_Job.html">Student Job</a></li>
+            </div>
             <li>
                 <!-- <i class="fas fa -user" style="font-size: 30px;"></i> -->
                 <img src="#" alt="">
@@ -28,7 +31,7 @@
     <div id="content">
 
         <section>
-            <h1 >Add Student Marks ></h1>
+            <h1>Add Student Marks ></h1>
         </section>
 
         <form name="Student_Score" action="#" method="post" onSubmit="return formValidation();">
@@ -38,7 +41,7 @@
                     <label for="student_ID">Student_ID</label>
                     <input type="number" name="student_ID" id="" pattern="[0-9]+" required>
                     <label for="marks">Marks</label>
-                    <input type="number"  name="marks" min="0" max="100" id="" required>
+                    <input type="number" name="marks" min="0" max="100" id="" required>
                     <label for="type">Type</label>
                     <select name="type" id="">
                         <option value="">Select</option>
@@ -76,7 +79,7 @@
                         <option value="">Select</option>
                         <option value="first">First Semester</option>
                         <option value="second">Second Semester</option>
-                    </select>     
+                    </select>
                     <label for="exam_date">Exam_Date</label>
                     <input type="date" name="exam_date" id="" required>
 
